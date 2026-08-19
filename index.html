@@ -40,7 +40,7 @@
   /* ---- scene 1 blurred background image ---- */
   .scene-bg{
     position:fixed; inset:0; z-index:0; pointer-events:none;
-    background-image:url('assets/screen1-bg.png');
+    background-image:url('screen1-bg.png');
     background-size:cover; background-position:center;
     filter:blur(var(--scene1-bg-blur));
     transform:scale(1.08); /* avoid blurred edges peeking in */
@@ -289,7 +289,7 @@ function buildComposableVisual(){
 
   return `
     <div style="position:relative; width:min(320px,72vw);">
-      <img src="assets/puzzle-four-parts.png" alt="Four connected puzzle pieces" style="width:100%; display:block; border-radius:10px;"/>
+      <img src="puzzle-four-parts.png" alt="Four connected puzzle pieces" style="width:100%; display:block; border-radius:10px;"/>
       ${labelEls}
     </div>`;
 }
